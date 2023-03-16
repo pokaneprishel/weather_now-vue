@@ -1,0 +1,171 @@
+// Настройки шрифта
+h1 {
+  font-size: calc(200px + 8 * (100vw - 320px) / 880);
+  margin: 0px;
+}
+h2 {
+  font-size: calc(50px + 8 * (100vw - 320px) / 880);
+  margin: 0px;
+  font-weight: 100;
+}
+h3 {
+  font-size: calc(15px + 8 * (100vw - 320px) / 880);
+  margin: 0px;
+}
+h4 {
+  font-size: calc(10px + 8 * (100vw - 320px) / 880);
+  margin: 0px;
+}
+
+// Основная сетка
+.wrapper {
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: repeat(1, minmax(375px, 800px));
+  grid-template-rows: 15% 50% 35%;
+  justify-content: center;
+
+  font-family: "Bebas Neue", cursive;
+  color: #0a0a0a;
+
+  // Сетка секции с поиском
+  .search-box {
+    display: grid;
+    justify-content: center;
+
+    // Стили для инпута
+    .search-bar {
+      display: grid;
+      align-self: center;
+      justify-self: center;
+
+      width: 30vw;
+      height: 5vh;
+
+      padding: 6px 0 4px 10px;
+      border: none;
+      background: whitesmoke;
+      border-radius: 5px;
+
+      font-family: inherit;
+    }
+  }
+
+  // Сетка секции прогноза
+  .current {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    padding: 10px;
+
+    // Анимация
+    .city {
+      transition: 0.2s;
+    }
+    .city:hover {
+      transform: scale(1.1);
+    }
+
+    // Сетка блока состояния погоды
+    .precipitation {
+      display: grid;
+      align-items: center;
+      justify-items: center;
+
+      transition: 0.2s;
+      // Настройки отображения иконки
+      .precipitation-icon {
+        img {
+          width: 5rem;
+          height: auto;
+        }
+      }
+    }
+    .precipitation:hover {
+      transform: scale(1.1);
+    }
+  }
+  // Стека секции приветствия
+  .greetings {
+    display: grid;
+    justify-items: center;
+    .welcome {
+      display: grid;
+      justify-self: center;
+      align-items: end;
+    }
+  }
+
+  // Изменение цвета дня недели
+  span {
+    color: #fff;
+  }
+
+  // Сдрос анимации инпута
+  input {
+    outline: none;
+  }
+}
+
+// Версия планшетов и смартфонов
+
+@media screen and (max-width: 1200px) {
+  h3 {
+    font-size: calc(30px + 8 * (100vw - 320px) / 880);
+  }
+
+  h4 {
+    font-size: calc(20px + 8 * (100vw - 320px) / 880);
+    margin: 0px;
+  }
+
+  .wrapper {
+    .search-box {
+      .search-bar {
+        width: 80vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 510px) {
+  h2 {
+    font-size: calc(35px + 8 * (100vw - 320px) / 880);
+    margin: 0px;
+  }
+}
+
+// Версия для смартфонов с малым дисплеем
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: calc(130px + 8 * (100vw - 320px) / 880);
+    margin: 0px;
+  }
+  h2 {
+    font-size: calc(30px + 8 * (100vw - 320px) / 880);
+    margin: 0px;
+  }
+  .wrapper {
+    .search-box {
+      .search-bar {
+        width: 80vw;
+      }
+    }
+  }
+
+  .wrapper {
+    .current {
+      .precipitation {
+        .precipitation-icon {
+          img {
+            width: 3rem;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

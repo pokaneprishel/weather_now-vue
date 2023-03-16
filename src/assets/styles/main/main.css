@@ -1,0 +1,163 @@
+h1 {
+  font-size: calc(200px + 8 * (100vw - 320px) / 880);
+  margin: 0px;
+}
+
+h2 {
+  font-size: calc(50px + 8 * (100vw - 320px) / 880);
+  margin: 0px;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: calc(15px + 8 * (100vw - 320px) / 880);
+  margin: 0px;
+}
+
+h4 {
+  font-size: calc(10px + 8 * (100vw - 320px) / 880);
+  margin: 0px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(375px, 800px))[1];
+      grid-template-columns: repeat(1, minmax(375px, 800px));
+  -ms-grid-rows: 15% 50% 35%;
+      grid-template-rows: 15% 50% 35%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Bebas Neue", cursive;
+  color: #0a0a0a;
+}
+
+.wrapper .search-box {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .search-box .search-bar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 30vw;
+  height: 5vh;
+  padding: 6px 0 4px 10px;
+  border: none;
+  background: whitesmoke;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.wrapper .current {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.wrapper .current .city {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.wrapper .current .city:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.wrapper .current .precipitation {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.wrapper .current .precipitation .precipitation-icon img {
+  width: 5rem;
+  height: auto;
+}
+
+.wrapper .current .precipitation:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.wrapper .greetings {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.wrapper .greetings .welcome {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.wrapper span {
+  color: #fff;
+}
+
+.wrapper input {
+  outline: none;
+}
+
+@media screen and (max-width: 1200px) {
+  h3 {
+    font-size: calc(30px + 8 * (100vw - 320px) / 880);
+  }
+  h4 {
+    font-size: calc(20px + 8 * (100vw - 320px) / 880);
+    margin: 0px;
+  }
+  .wrapper .search-box .search-bar {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  h2 {
+    font-size: calc(35px + 8 * (100vw - 320px) / 880);
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: calc(130px + 8 * (100vw - 320px) / 880);
+    margin: 0px;
+  }
+  h2 {
+    font-size: calc(30px + 8 * (100vw - 320px) / 880);
+    margin: 0px;
+  }
+  .wrapper .search-box .search-bar {
+    width: 80vw;
+  }
+  .wrapper .current .precipitation .precipitation-icon img {
+    width: 3rem;
+    height: auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */
