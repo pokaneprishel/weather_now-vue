@@ -1,24 +1,26 @@
-# weatherapp-vue
+# WeatherNow:partly_sunny:
 
-## Project setup
-```
-npm install
-```
+WeatherNow App - это минималистичное приложение для отслеживания погоды, которое позволяет пользователям получать информацию о погодных условиях в любом месте на Земле. 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Основные функции
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- Поиск погоды по названию города
+- Отображение текущей температуры и других погодных условий
+- Отображение актуальной даты
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Технологии:hammer:
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Weather App разработано с использованием следующих технологий:
+
+- [Vue 3 CLI](https://v3.ru.vuejs.org/)
+- [SCSS](https://sass-lang.com/)
+- [Webpack](https://webpack.js.org/)
+- [Babel](https://babeljs.io/)
+- [OpenWeatherMap API](https://openweathermap.org/)
+
+## Авторы:technologist:
+[Danil Mazitov](https://github.com/pokaneprishel) - UX/UI, верстка, логика, архитектура.
+
+## Деплой
+
+Ссылочка вот [тут]():globe_with_meridians:	
