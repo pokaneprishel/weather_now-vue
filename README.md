@@ -23,4 +23,4 @@ Weather App разработано с использованием следую�
 
 ## Деплой
 
-Ссылочка вот [тут]():globe_with_meridians:	
+Ссылочка вот [тут](https://weather-now-desigh.netlify.app/):globe_with_meridians:	
